@@ -1,0 +1,4 @@
+# Core requirements (no external dependencies needed for basic functionality)
+
+# For building executables
+pyinstaller>=5.0.0
