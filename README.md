@@ -83,7 +83,7 @@ python obs_backup_tool.py restore obs_backup_20240101_120000.zip --no-media
 
 ## ダウンロード
 
-[Releases](https://github.com/yourusername/obs-backup-tool/releases)ページから最新版をダウンロード：
+[Releases](https://github.com/pollinosis/obs-backupper-with-filesl/releases)ページから最新版をダウンロード：
 - `OBS-Backup-Tool.exe` - GUI版（推奨）
 - `OBS-Backup-Tool-CLI.exe` - コマンドライン版
 

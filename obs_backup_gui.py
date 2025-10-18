@@ -467,7 +467,20 @@ class OBSBackupGUI:
                     return json.load(f)
             except:
                 pass
-        return {}
+        
+        # Create default config if it doesn't exist
+        default_config = {
+            "obs_config_path": None,
+            "default_backup_dir": None,
+            "last_used": None
+        }
+        try:
+            with open(self.config_file, 'w', encoding='utf-8') as f:
+                json.dump(default_config, f, indent=2)
+        except:
+            pass
+        
+        return default_config
     
     def save_app_config(self):
         """Save application configuration to file"""
